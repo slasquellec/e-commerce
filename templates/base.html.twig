@@ -15,6 +15,47 @@
         {% endblock %}
     </head>
     <body>
-        {% block body %}{% endblock %}
+        <header>
+            <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-secondary">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="{{ path('app_home') }}">Accueil</a>
+                    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarColor02">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ path('app_buy') }}">Acheter la {{ description }}</a>
+                            </li>
+                            <li class="nav-item">
+                                <a id="CGV" class="nav-link" href="{{ path('app_cgv') }}">Conditions générales de vente</a>
+                            </li>
+                            <li class="nav-item">
+                                <a id="RGPD" class="nav-link" aria-current="page" href="{{ path('app_rgpd') }}">Réglementation concernant les données personnelles</a>
+                            </li>
+                            <li class="nav-item">
+                                <a id="licence" class="nav-link" aria-current="page" href="{{ path('app_licence') }}">Licence</a>
+                            </li>
+                            <li class="nav-item">
+                                <a id="contact" class="nav-link" aria-current="page" href="{{ path('app_contact') }}">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a id="connecter" class="nav-link" aria-current="page" href="{{ path('app_register') }}">S'enregistrer</a>
+                            </li>
+                            <li class="nav-item">
+                                <a id="login" class="nav-link" aria-current="page" href="{{ path('app_login') }}">Se connecter/se déconnecter</a>
+                            </li>
+                            <li class="nav-item">
+                                <a id="user" class="nav-link" aria-current="page" href="{{ path('app_my_space') }}">Mon espace</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            {% block img %}{% endblock %}
+            {% block body %}{% endblock %}
+        </main>
     </body>
 </html>
