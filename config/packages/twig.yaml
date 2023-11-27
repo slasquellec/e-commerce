@@ -3,7 +3,6 @@ twig:
     form_themes: ['bootstrap_5_layout.html.twig']
     globals:
         #admin_name: '%env(ADMIN_NAME)%'
-        description: 'formation'
         name: 'LASQUELLEC Samuel'
         address: '4 place de la halle 18120 Massay'
         email: 'samuel.lasquellec@bbox.fr'
@@ -11,7 +10,6 @@ twig:
         telephone: '07.84.44.13.71'
         siret: '83386478800025'
         ape: '9511Z'
-        price: '500'
         currency: 'euros'
         tva: 'non applicable ART.293B du CGI'
         quantity: '1'

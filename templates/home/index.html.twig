@@ -13,10 +13,10 @@
     <img id="header-image" src="#" alt="image affaire" />
     <h1>Bonjour !</h1>
     <br />
-    <p>Vous recherchez un télétravail ? Vous désirez être indépendant et travailler de où vous voulez et quand vous voulez ? Alors vous êtes au bon endroit. {{ company }} a l'immense plaisir de vous présenter la {{ description }} qui vous permettra de devenir développeur web et mobile. La seule chose dont vous aurez besoin est d'un ordinateur et d'une connection à internet.</p>
+    <p>Vous recherchez un télétravail ? Vous désirez être indépendant et travailler de où vous voulez et quand vous voulez ? Alors vous êtes au bon endroit. {{ company }} a l'immense plaisir de vous présenter la {{ formation.name }} qui vous permettra de devenir développeur web et mobile. La seule chose dont vous aurez besoin est d'un ordinateur et d'une connection à internet.</p>
     <br />
     <div class="text-center">
-        <a class="btn btn-success" href="{{ path('app_buy') }}" role="button">Achetez la {{ description }} maintenant</a>
+        <a class="btn btn-success" href="{{ path('app_shop') }}" role="button">Achetez la {{ formation.name }} maintenant</a>
     </div>
     <br />
     <h2>En quoi consiste le métier de développeur ?</h2>
@@ -24,6 +24,6 @@
     <p>Cela consiste à créer des sites web et des applications mobile pour vous même ou pour des clients. Pour cela, le développeur doit maitriser les différents langages de code ainsi que les différents outils informatiques nécessaires à la réalisation d'un site web. Le développeur doit aussi connaitre la réglementation concernant les données personnelles des utilisateurs ainsi que les lois concernant la réalisation de site web.</p>
     <br />
     <div class="text-center">
-        <a class="btn btn-success" href="{{ path('app_buy') }}" role="button">Achetez la {{ description }} maintenant</a>
+        <a class="btn btn-success" href="{{ path('app_shop') }}" role="button">Achetez la {{ formation.name }} maintenant</a>
     </div>
 {% endblock %}
